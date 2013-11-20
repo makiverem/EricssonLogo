@@ -32,9 +32,6 @@ int countHashMarks(s m[Width]) {
 }
 
 s main() {
-	FILE * pFile;
-	pFile = fopen("myfile.txt", "w");
-
 	s m[Height][Width];
 	for (s i = 0; i < Height; ++i)
 		for (s j = 0; j < Width; ++j)
@@ -49,7 +46,6 @@ s main() {
 		int j = 0;
 
 		while (printedHash < sumHash) {
-			fprintf(pFile, "%c", m[i][j]);
 			printf("%c", m[i][j]);
 			if (m[i][j] == 35) {
 				printedHash++;
@@ -58,7 +54,6 @@ s main() {
 		}
 
 		printf("\n");
-		fprintf(pFile, "\n");
 	}
 
 	fclose(pFile);
