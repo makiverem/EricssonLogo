@@ -56,5 +56,4 @@ s main() {
 		printf("\n");
 	}
 
-	fclose(pFile);
 }
