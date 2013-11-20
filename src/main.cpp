@@ -32,7 +32,7 @@ s main() {
 	d(m, 0);
 	d(m, 29);
 	d(m, 58);
-	for (s i = 0; i < 97; ++i) {
+	for (s i = 0; i < 97; ++i)
 		printf("%s\n", m[i]);
-	}
+
 }
