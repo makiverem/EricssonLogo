@@ -25,10 +25,10 @@ void d(c m[97][72], s r) {
 }
 s main() {
 	c m[97][72];
-	for (s i = 0; i < 97; ++i) {
+	for (s i = 0; i < 97; ++i)
 		for (s j = 0; j < 72; ++j)
 			m[i][j] = 32;
-	}
+
 	d(m, 0);
 	d(m, 29);
 	d(m, 58);
